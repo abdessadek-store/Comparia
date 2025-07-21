@@ -1,0 +1,13 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.display-1 {
+  font-size: 8rem;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+}

@@ -1,0 +1,141 @@
+<div class="landing-page">
+
+  <!-- Hero Section -->
+  <header class="hero d-flex flex-column justify-content-center align-items-center text-center text-white position-relative">
+    <div class="container animate__animated animate__fadeInDown">
+      <h1 class="display-3 fw-bold mb-3">Comparez les frais bancaires & d’assurance facilement</h1>
+      <p class="lead fs-4 mb-4">Prenez des décisions financières éclairées et économisez chaque mois.</p>
+      <div>
+        <a routerLink="/compare-main" class="btn btn-gradient btn-lg me-3 animate__animated animate__fadeInLeft">
+          <i class="bi bi-bank me-2"></i> Comparer les banques
+        </a>
+        <a routerLink="/compare-main" class="btn btn-light btn-lg me-3 text-primary animate__animated animate__fadeInRight">
+          <i class="bi bi-shield-check me-2"></i> Comparer les assurances
+        </a>
+        <a routerLink="/compare-main" class="btn btn-light btn-lg text-primary animate__animated animate__fadeInRight">
+          <i class="bi bi-shield-check me-2"></i> Comparer les Micro Crédit
+        </a>
+      </div>
+    </div>
+
+    <!-- Wave divider -->
+    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="#ffffff" fill-opacity="1" d="M0,64L80,69.3C160,75,320,85,480,106.7C640,128,800,160,960,149.3C1120,139,1280,85,1360,58.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Pourquoi choisir Comparia ?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="feature-card p-4 shadow-sm rounded-4 text-center h-100 animate__animated animate__fadeInUp">
+            <i class="bi bi-speedometer2 display-4 text-gradient mb-3"></i>
+            <h5 class="fw-semibold mb-3">Rapide & Simple</h5>
+            <p>Accédez aux comparaisons instantanément, sans compte ni inscription.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 shadow-sm rounded-4 text-center h-100 animate__animated animate__fadeInUp animate__delay-1s">
+            <i class="bi bi-shield-lock display-4 text-gradient mb-3"></i>
+            <h5 class="fw-semibold mb-3">Données Fiables</h5>
+            <p>Nos données sont mises à jour régulièrement et proviennent de sources officielles.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card p-4 shadow-sm rounded-4 text-center h-100 animate__animated animate__fadeInUp animate__delay-2s">
+            <i class="bi bi-currency-euro display-4 text-gradient mb-3"></i>
+            <h5 class="fw-semibold mb-3">Économisez Plus</h5>
+            <p>Comparez facilement et réalisez des économies sur vos frais bancaires et assurances.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">Comment ça marche ?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="step-card p-4 h-100 rounded-4 shadow-sm">
+            <div class="step-icon bg-gradient text-white rounded-circle mb-3 mx-auto">
+              <i class="bi bi-search fs-1"></i>
+            </div>
+            <h5 class="fw-semibold mb-2">1. Recherchez</h5>
+            <p>Définissez vos besoins en frais bancaires ou assurances.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card p-4 h-100 rounded-4 shadow-sm">
+            <div class="step-icon bg-gradient text-white rounded-circle mb-3 mx-auto">
+              <i class="bi bi-bar-chart fs-1"></i>
+            </div>
+            <h5 class="fw-semibold mb-2">2. Comparez</h5>
+            <p>Visualisez clairement les différentes options et tarifs.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="step-card p-4 h-100 rounded-4 shadow-sm">
+            <div class="step-icon bg-gradient text-white rounded-circle mb-3 mx-auto">
+              <i class="bi bi-check2-circle fs-1"></i>
+            </div>
+            <h5 class="fw-semibold mb-2">3. Choisissez</h5>
+            <p>Optez pour l’offre la plus adaptée à votre profil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials py-5 bg-white">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Ce que disent nos utilisateurs</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-card p-4 text-center rounded-4 shadow-sm mx-auto" style="max-width:600px;">
+              <img src="assets/users/sophie.jpg" alt="Sophie" class="rounded-circle mb-3 testimonial-img">
+              <p class="mb-3 fst-italic">« Grâce à Comparia, j’ai réduit mes frais bancaires de 30 % en un rien de temps ! »</p>
+              <h6 class="fw-semibold">Sophie, Paris</h6>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-card p-4 text-center rounded-4 shadow-sm mx-auto" style="max-width:600px;">
+              <img src="assets/users/yassine.jpg" alt="Yassine" class="rounded-circle mb-3 testimonial-img">
+              <p class="mb-3 fst-italic">« Simple, rapide et efficace — j’ai aussi changé mon assurance auto facilement. »</p>
+              <h6 class="fw-semibold">Yassine, Casablanca</h6>
+            </div>
+          </div>
+          <!-- Add more testimonials as needed -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section py-5 text-center text-white bg-gradient">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Prêt à économiser ?</h2>
+      <p class="mb-4 fs-5">Comparez les offres et faites le bon choix aujourd’hui.</p>
+      <a routerLink="/compare-main" class="btn btn-lg btn-light btn-gradient-shadow">
+        <i class="bi bi-search me-2"></i> Commencer la comparaison
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center py-4 bg-dark text-white">
+    <p class="mb-0">© 2025 Comparia. Tous droits réservés. Conçu avec ❤️.</p>
+  </footer>
+
+</div>

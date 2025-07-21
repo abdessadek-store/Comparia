@@ -1,0 +1,39 @@
+<div class="container mt-5 pb-5">
+  <div class="card shadow-sm rounded-4 border-0 custom-card">
+    <div class="card-body p-4">
+      <h4 class="mb-4 text-primary">Sélection d’un produit par institution</h4>
+
+      <div class="row">
+
+      <div class="mb-4 col">
+        <label for="institution" class="form-label fw-semibold">Institution</label>
+        <select id="institution" class="form-select custom-select" [(ngModel)]="selectedInstitutionId" (change)="onInstitutionChange()">
+          <option [ngValue]="null" disabled selected>-- Sélectionner une institution --</option>
+          <option *ngFor="let inst of institutions" [ngValue]="inst.id">{{ inst.name }}</option>
+        </select>
+      </div>
+
+      <div class="mb-4 col">
+        <label for="Nature" class="form-label fw-semibold">Nature</label>
+        <select id="Nature" class="form-select custom-select" [(ngModel)]="selectedTypeId" >
+          <option [ngValue]="null" disabled selected>-- Sélectionner La Nature --</option>
+          <option *ngFor="let inst of BankTypes" [ngValue]="inst.id">{{ inst.name }}</option>
+        </select>
+      </div>
+
+      <div class="mb-4 col">
+        <label for="product" class="form-label fw-semibold">Produit</label>
+        <select id="product" class="form-select custom-select" [(ngModel)]="selectedProductId">
+          <option [ngValue]="null" disabled selected>-- Sélectionner un produit --</option>
+          <option *ngFor="let prod of filteredProducts" [ngValue]="prod.id">{{ prod.name }}</option>
+        </select>
+      </div>
+      </div>
+
+      <app-connected-user></app-connected-user>
+      <button class="btn btn-block btn-primary mt-5" (click)="onSearch()">Rechercher...</button>
+
+      <app-compare-list [filteredPrices]="filteredPrices" ></app-compare-list>
+    </div>
+  </div>
+</div>

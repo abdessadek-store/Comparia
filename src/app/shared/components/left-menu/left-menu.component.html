@@ -1,0 +1,39 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar">
+  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 text-white text-decoration-none">
+    <span class="fs-4">Marouane App</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a [routerLink]="['/dashboard']" routerLinkActive="active" class="nav-link text-white">
+        <i class="bi bi-speedometer2 me-2"></i> Accueil
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/main']" routerLinkActive="active" class="nav-link text-white">
+        <i class="bi bi-people me-2"></i> Credit Maison
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/devis']" routerLinkActive="active" class="nav-link text-white">
+        <i class="bi bi-bar-chart-line me-2"></i> Credit Auto
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/bank']" routerLinkActive="active" class="nav-link text-white">
+        <i class="bi bi-gear me-2"></i> Ouverture de compte
+      </a>
+    </li>
+    <li>
+      <a [routerLink]="['/devis']" routerLinkActive="active" class="nav-link text-white">
+        <i class="bi bi-gear me-2"></i> Echange de Devis
+      </a>
+    </li>
+  </ul>
+  <hr>
+  <div>
+    <a href="#" class="nav-link text-danger">
+      <i class="bi bi-box-arrow-right me-2"></i> Logout
+    </a>
+  </div>
+</div>
